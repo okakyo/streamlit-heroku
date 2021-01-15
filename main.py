@@ -1,6 +1,6 @@
 import streamlit as st 
 import numpy as np
-
+import scipy as sp 
 import pandas as pd
 import requests
 
@@ -8,7 +8,6 @@ import requests
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
          'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
-
 
 @st.cache
 def load_data(nrows):
