@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: streamlit run --server.port 8501 /app/main.py
+  web: streamlit run --server.port 8501 main.py
